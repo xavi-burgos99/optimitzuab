@@ -1,4 +1,4 @@
-# Innovation Day Project
+# Optimitzuab
 Este repositorio contiene el código y la documentación para nuestro proyecto desarrollado durante el evento *Datathon UAB 2024*.
 
 ## Introducción
