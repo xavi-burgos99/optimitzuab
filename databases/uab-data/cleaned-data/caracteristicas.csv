@@ -1,0 +1,77 @@
+ID_CARACTERISTICA,DS_CARACTERISTICA,QL_MEMO_CARACTERISTICA,ID_TP_VAL_CARAC
+2,núm.,Codi divisió,E
+5,Projector cossos,Projec_cosos,B
+7,Accés per a minusvàlids,Ac_ minusvàl.,B
+1067,Porta secundària,Porta_secu,C
+1079,Identificador per a la consulta de l'ocupació a través de ws,ID_OCUPACION,C
+1078,Perfils associats a la família de recursos,ROLES_ASOCIADOS,L
+8,núm.,Codi campus,E
+1005,Càmara vídeo,C_vídeo,B
+1006,Canó projecció fix,Canó,B
+1007,Doble platina,D_ platina,B
+1008,DVD,DVD,B
+1009,Aire condicionat,A_condic.,B
+1010,Cabines d'interpretació,Cabines,B
+1011,Càmara digital,C_ digital,B
+1012,Càmera de control,C_control,B
+1013,Capturadora  vídeo,Capturadora,B
+1014,Connexió xarxa,C_xarxa,B
+1016,Escaner diapositives,Escaner,B
+1017,Escaner pla,E_pla,B
+1018,Faristol,Faristol,B
+1019,Filmadora diapositives,Fil_diapos,B
+1020,Filmadora VHS,Fil_VHS,B
+1021,Interconnexió de dues aules,Interconnexió,B
+1022,Megafonia,Megafonia,B
+1023,Micròfon corbata,Micròfon,B
+1024,Minidisc,Minidisc,B
+1025,Monitor d'ordinador,Monitor,B
+1026,Negatoscopi,Negatoscopi,B
+1027,Pantalla carril,P_carril,B
+1028,Papelògraf,Papelògraf,B
+1029,Piano,Piano,B
+1030,Projector diapositives,Projec_diapos,B
+1031,Punter làser,P_làser,B
+1032,Rac de vídeos,Rac_vídeo,B
+1033,Reproductor CD/casette,Repro_CD,B
+1034,Retroprojector,Retroprojector,B
+1035,Tarima,Tarima,B
+1036,Telèfon núm.,Telef.,E
+1037,Televisor,TV,B
+1038,Traducció simultània (130 CAD),Trad_simultàn.,B
+1040,Impressora,Impressora,L
+1041,Ordinador,Ordinador,L
+1042,Pissarra,Pissarra,L
+100,Classificació d'Espais,ClasseEspai,L
+1043,Taules,Taules,L
+1044,Vídeo,Vídeo,L
+1045,Mobiliari,Mobiliari,L
+1046,Capacitat docència,Capacitat doc.,E
+1047,Capacitat exàmens,Capac. d'examen,E
+1048,Mampares (espais amb possibilitat de divisió),Mampares,B
+1049,Connexió USB PC,C_USB PC,B
+1050,Pantalla fixa,P_fixa,B
+1052,Gravadores de DVD,Grav_DVD,B
+1053,Gravadores de CD,Grav_CD,B
+1054,Gravadores i reproductors de cassette,Grav_cass,B
+1055,Impressora color,Impr_color,B
+1056,Impressora làser,Impr_laser,B
+1057,Impressora matricial,Impr_matri,B
+1058,Instal·lació informàtica,Ins_nform,B
+1059,Micròfon sense fils,Micr_ma,B
+1060,Micròfon de corbata,Micro_corb,B
+1061,Pissarra interactiva,Pissa_elec,B
+1062,Videoconferència,Vidi_conf,B
+1063,Connexió xarxa sense fil,C_xarxa s/,B
+1064,Gravació i transmissió per internet,Grav_inter,B
+1065,Taules per a minusvàlids,Tau_minusv,E
+1066,Roseta xarxa núm.,Roseta,C
+1068,Canó projecció portàtil,Canó_port,B
+1069,Micròfons de taula,Micro_taul,B
+1071,Connexió a la xarxa (nombre),C-Xarxa-Q,E
+1072,Pissarra pentagrama,Pissa_pent,B
+1073,Ordinadors (nombre),Ordin.nomb,E
+1077,Capacitat,Capacitat,E
+1074,Allargador,Allargador,B
+1075,Altaveus portàtils,Altaveus_p,B
+1080,Capacitat del grup,CAPA_GRU,E
