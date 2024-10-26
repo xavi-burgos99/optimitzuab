@@ -12,7 +12,7 @@ DROP TABLE IF EXISTS "building";
 -- Create table `building`;
 CREATE TABLE "building" (
     "id" INTEGER NOT NULL PRIMARY KEY,
-    "name" TEXT NOT NULL,
+    "name" TEXT DEFAULT "Unnamed building",
     "description" TEXT,
     "created_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updated_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -23,7 +23,7 @@ CREATE TABLE "building" (
 CREATE TABLE "space" (
     "id" INTEGER NOT NULL PRIMARY KEY,
     "building_id" INTEGER NOT NULL,
-    "name" TEXT NOT NULL,
+    "name" TEXT DEFAULT "Unnamed classroom",
     "description" TEXT,
     "capacity" INTEGER NOT NULL,
     "is_active" BOOLEAN NOT NULL DEFAULT 1,
@@ -35,8 +35,8 @@ CREATE TABLE "space" (
 
 -- Create table `teacher`
 CREATE TABLE "teacher" (
-    "id" INTEGER NOT NULL PRIMARY KEY,
-    "name" TEXT NOT NULL,
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "name" TEXT DEFAULT "Unnamed teacher",
     "created_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updated_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "deleted_at" DATETIME DEFAULT NULL
