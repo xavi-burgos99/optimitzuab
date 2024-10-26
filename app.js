@@ -10,15 +10,15 @@ app.use('/assets', express.static('assets'));
 
 // Configurar EJS como motor de plantillas
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'src/views'));
+app.set('views', path.join(__dirname, 'app/views'));
 app.use(expressLayouts);
 
 // Initialize the app
-const initApp = require('./src/init');
+const initApp = require('./app/init');
 initApp();
 
 // Importar rutas
-const routes = require('./src/routes/index');
+const routes = require('./app/routes/index');
 app.use('/', routes);
 
 // Iniciar el servidor
