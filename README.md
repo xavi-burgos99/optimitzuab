@@ -1,4 +1,4 @@
-# Innovation Day Project
+# Optimitzuab
 Este repositorio contiene el código y la documentación para nuestro proyecto desarrollado durante el evento *Datathon UAB 2024*.
 
 ## Introducción
@@ -43,13 +43,13 @@ Ejemplos y guías sobre cómo utilizar el proyecto.
   GitHub: [@SamyaKarzaziElBachiri](https://github.com/SamyaKarzaziElBachiri)
   LinkedIn: [in/samya-k](https://www.linkedin.com/in/samya-k-2ba678235)
 
-- **(A completar)**
-  GitHub: []()
-  LinkedIn: []()
+- **Jan Gras**
+  GitHub: [@JG03dev](https://github.com/JG03dev)
+  LinkedIn: [in/jangras](https://www.linkedin.com/in/jangras/)
 
-- **(A completar)**
-  GitHub: []()
-  LinkedIn: []()
+- **Yeray Cordero**
+  GitHub: [@yeray142](https://github.com/yeray142)
+  LinkedIn: [in/yeray142](https://www.linkedin.com/in/yeray142/)
 
 ## Agradecimientos
 **(A completar)**
