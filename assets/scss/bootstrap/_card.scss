@@ -1,0 +1,26 @@
+.card {
+  .card-header {
+    padding: $card-header-padding-y $card-header-padding-x;
+
+    h1, h2, h3, h4, h5, h6, p {
+      margin-bottom: 0;
+    }
+
+    + .card-body, + .card-footer {
+      padding-top: 0;
+    }
+  }
+
+  .card-body {
+    padding: $card-padding-y $card-padding-x;
+
+    + .card-footer {
+      padding-top: 0;
+      margin-top: $card-footer-padding-y - $card-padding-y;
+    }
+  }
+
+  .card-footer {
+    padding: $card-footer-padding-y $card-footer-padding-x;
+  }
+}

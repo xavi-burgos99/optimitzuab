@@ -1,0 +1,20 @@
+{
+  "name": "rohu-app",
+  "version": "1.0.0",
+  "description": "Este repositorio contiene el código y la documentación para nuestro proyecto desarrollado durante el evento *Innovation Day*.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.3.0",
+    "bootstrap": "^5.3.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "express-ejs-layouts": "^2.5.1"
+  }
+}

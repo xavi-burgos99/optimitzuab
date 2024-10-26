@@ -1,0 +1,49 @@
+.form-floating {
+  > .form-control:focus,
+  > .form-control:not(:placeholder-shown),
+  > .form-control-plaintext,
+  > .form-select {
+    ~ label {
+      &::before {
+        position: absolute;
+        inset: $form-floating-padding-y ($form-floating-padding-x * .5);
+        z-index: -1;
+        height: $form-floating-label-height;
+        content: "";
+        background-color: $input-bg;
+        @include border-radius($input-border-radius);
+      }
+
+      &::after {
+        position: relative;
+        inset: inherit;
+        z-index: inherit;
+        height: inherit;
+        content: inherit;
+        background-color: inherit;
+        border-radius: inherit;
+      }
+    }
+  }
+
+  > :disabled ~ label,
+  > .form-control:disabled ~ label {
+    &::before {
+      background-color: $input-disabled-bg;
+    }
+
+    &::after {
+      background-color: inherit;
+    }
+  }
+
+  > .form-control,
+  > .form-select {
+    &[required] {
+      ~ label::after {
+        content: ' *';
+        color: $danger;
+      }
+    }
+  }
+}

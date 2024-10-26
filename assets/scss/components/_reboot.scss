@@ -1,0 +1,21 @@
+body {
+  background-color: $body-bg;
+  padding: $body-padding-y $body-padding-x;
+}
+
+main, main.container-xl {
+  padding: 0;
+
+  .op-menu ~ & {
+    padding-left: $op-menu-width;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  main, main.container-xl {
+    .op-menu ~ & {
+      padding-left: 0;
+      padding-bottom: $op-menu-height;
+    }
+  }
+}

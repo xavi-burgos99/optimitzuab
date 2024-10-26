@@ -128,3 +128,12 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# MacOS
+.DS_Store
+
+# JetBrains
+.idea/
+
+# Config js files
+config/database.js

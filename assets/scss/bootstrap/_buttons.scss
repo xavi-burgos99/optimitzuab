@@ -1,0 +1,18 @@
+.btn {
+  transition:
+    background-color $transition-base,
+    border-color $transition-base,
+    color $transition-base,
+    box-shadow $transition-base,
+    transform $transition-base;
+
+  &:active {
+    transform: scale(0.95);
+    transition:
+      background-color $transition-base,
+      border-color $transition-base,
+      color $transition-base,
+      box-shadow $transition-base,
+      transform $transition-fast;
+  }
+}

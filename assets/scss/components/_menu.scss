@@ -1,0 +1,136 @@
+.op-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: $op-menu-width;
+  background-color: $op-menu-bg;
+  z-index: 1000;
+
+  .op-menu-nav,
+  .op-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: $op-menu-gap;
+  }
+
+  .op-menu-nav {
+    padding: $op-menu-padding-y $op-menu-padding-x;
+  }
+
+  .op-menu-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .op-menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .op-menu-link {
+    @extend .btn;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: $op-menu-link-padding-y $op-menu-link-padding-x;
+    border-radius: $op-menu-link-border-radius;
+    border-style: hidden;
+    text-align: left;
+    font-size: $op-menu-link-font-size;
+    font-weight: $op-menu-link-font-weight;
+    overflow: hidden;
+
+    @include button-variant(
+      transparent,  // Background
+      $secondary,     // Border
+      $secondary,     // Color
+      rgba($dark, 0.1),
+      $hover-border: $primary,
+      $hover-color: $primary,
+      $active-background: $primary,
+      $active-border: $primary,
+      $active-color: $white
+    );
+
+    .op-menu-link__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: $op-menu-link-icon-width;
+      margin-right: $op-menu-link-icon-margin;
+      font-size: $op-menu-link-icon-size;
+      text-align: center;
+      opacity: 0.75;
+      transition: opacity $transition-base;
+    }
+
+    .op-menu-link__label {
+      flex: 1 1 0;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      .op-menu-link__icon {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .op-menu {
+    top: unset;
+    width: 100%;
+    height: $op-menu-height;
+
+    .op-menu-nav,
+    .op-menu-list {
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+    }
+
+    .op-menu-item {
+      flex: 1 1 auto;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .op-menu-link {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: $op-menu-link-padding-y $op-menu-link-padding-x;
+      font-size: $op-menu-link-font-size * 0.625;
+      text-align: center;
+
+      .op-menu-link__icon {
+        margin-right: 0;
+      }
+
+      .op-menu-link__label {
+        margin-top: 0.5rem;
+        line-height: 1;
+        width: 100%;
+      }
+
+      &.active {
+        background-color: transparent;
+        color: $primary;
+      }
+    }
+  }
+}
