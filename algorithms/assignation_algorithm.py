@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
-import time
-from queue import PriorityQueue
+from collections import defaultdict
 
 class Algorithms_benchmarks:
 
@@ -67,68 +66,43 @@ class Algorithms_benchmarks:
         "Teléfono (fijo)": 2,
         "Roseta de red": 0
     }
-    horario = dict
 
-    class Elemento:
-        def __init__(self, valor: pd.DataFrame):
-            self.valor = valor
-
-        # Método de comparación
-        def __lt__(self, other):
-            return self['start'] < other['start']
-
-
-    def __init__(self, info: pd.DataFrame):
+    def _init_(self, info: pd.DataFrame):
         portatil_Wh = 100
 
-        # Get unique combinations of 'space.id' and 'features.name'
-        aulas_features = info[['space.id', 'features.name']].drop_duplicates()
-
-        # Map 'features.name' to consumption values
-        aulas_features['feature_consumo'] = aulas_features['features.name'].map(
+        # Mapear 'features.name' a 'feature_consumo'
+        info['feature_consumo'] = info['features.name'].map(
             self.consumos_por_dispositivo).fillna(0)
 
-        # Sum consumption per 'space.id' (classroom)
-        consumo_aula = aulas_features.groupby('space.id')['feature_consumo'].sum().reset_index()
-        consumo_aula.rename(columns={'feature_consumo': 'consumo_aula'}, inplace=True)
+        # Sumar el consumo por aula
+        info['consumo_aula'] = info.groupby('space.id')['feature_consumo'].transform('sum')
 
-        # Merge the total classroom consumption back into the original DataFrame
-        info = info.merge(consumo_aula, on='space.id', how='left')
+        # Determinar si cada fila es de un laboratorio
+        info['is_lab'] = info['space.description'].str.contains('lab\. |laboratori', regex=True, case=False)
 
-        # Calculate total consumption per row
-        if info['space.description'].str.contains('lab. | laboratori'):
-            info['consumo'] = (info['consumo_aula']/3600)*info['duration']
-        else:
-            info['consumo'] = ((info['consumo_aula'] + info['subject_group.real_capacity'] * portatil_Wh)/3600)*info['duration']
+        # Calcular el consumo total por fila
+        info['consumo'] = np.where(
+            info['is_lab'],
+            (info['consumo_aula'] / 3600) * info['duration'],
+            ((info['consumo_aula'] + info['subject_group.real_capacity'] * portatil_Wh) / 3600) * info['duration']
+        )
 
-        # Store the updated DataFrame
+        # Almacenar el DataFrame actualizado
         self.info = info
 
     def benchmark_without_movement(self):
-        for aula in self.info['space.id'].unique():
+        horario = defaultdict(dict)
 
-            disorder_info = self.info[self.info['space.id'] == aula]
-            self.horario[aula]=dict
+        # Agrupar por 'space.id' y 'dia'
+        grouped = self.info.groupby(['space.id', 'dia'])
 
-            for dia in disorder_info['dias'].unique():
+        for (aula, dia), group in grouped:
+            # Ordenar por hora de inicio si es necesario
+            group_sorted = group.sort_values('start')
+            total_consumo = group_sorted['consumo'].sum()
 
-                elements = []
-                total = 0
-                dia_info = disorder_info[disorder_info['dia'] == dia]
-                pq = PriorityQueue(self.Elemento(disorder_info.head(0)))
-                dia_info = dia_info.drop(index=0)
-
-                for space in dia_info:
-                   pq.put(self.Elemento(space))
-
-                while not pq.empty():
-                    hour = pq.get()
-                    elements.append(hour)
-                    total += hour['consumo']
-
-                self.horario[aula][dia] = elements
-                self.horario[aula][dia]['total'] = total
-
-
-
-
+            horario[aula][dia] = {
+                'elements': group_sorted.to_dict('records'),
+                'total': total_consumo
+            }
+        return horario
