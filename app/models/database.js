@@ -9,13 +9,13 @@ else
 
 const catalogTables = [
   'building',
+  'feature',
   'space',
-  'teacher',
-  'grade',
+  'space_feature',
   'subject',
   'subject_group',
   'subject_group_session',
-  'required_group_space'
+  'subject_group_session_feature',
 ];
 
 let db;
