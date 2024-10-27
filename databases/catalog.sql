@@ -3,7 +3,6 @@ DROP TABLE IF EXISTS "required_group_session_space";
 DROP TABLE IF EXISTS "subject_group_session";
 DROP TABLE IF EXISTS "subject_group";
 DROP TABLE IF EXISTS "subject";
-DROP TABLE IF EXISTS "degree";
 DROP TABLE IF EXISTS "teacher";
 DROP TABLE IF EXISTS "space";
 DROP TABLE IF EXISTS "building";
@@ -42,28 +41,17 @@ CREATE TABLE "teacher" (
     "deleted_at" DATETIME DEFAULT NULL
 );
 
--- Create table `degree`
-CREATE TABLE "degree" (
-    "id" INTEGER NOT NULL PRIMARY KEY,
-    "building_id" INTEGER NOT NULL,
-    "name" TEXT DEFAULT "Unnamed degree",
-    "created_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    "updated_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    "deleted_at" DATETIME DEFAULT NULL,
-    FOREIGN KEY ("building_id") REFERENCES "building" ("id") ON DELETE CASCADE
-);
-
 -- Create table `subject`
 CREATE TABLE "subject" (
     "id" INTEGER NOT NULL PRIMARY KEY,
-    "degree_id" INTEGER NOT NULL,
+    "building_id" INTEGER NOT NULL,
     "name" TEXT NOT NULL,
     "period" INTEGER NOT NULL,
     "notes" TEXT,
     "created_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updated_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "deleted_at" DATETIME DEFAULT NULL,
-    FOREIGN KEY ("degree_id") REFERENCES "degree" ("id") ON DELETE CASCADE
+    FOREIGN KEY ("building_id") REFERENCES "building" ("id") ON DELETE CASCADE
 );
 
 -- Create table `subject_group`
