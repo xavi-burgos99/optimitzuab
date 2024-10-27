@@ -8,6 +8,20 @@ router.get('/', (req, res) => {
   });
 });
 
+router.get('/upload', (req, res) => {
+  res.render('upload', {
+    title: 'Subir CSV',
+    menu: true,
+  });
+});
+
+router.get('/assign', (req, res) => {
+  res.render('assign', {
+    title: 'Asignar',
+    menu: true,
+  });
+});
+
 router.get('/404', (req, res) => {
   res.render('404', {
     title: 'Página no encontrada',
