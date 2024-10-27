@@ -8,17 +8,14 @@ else
   config = require('../../config/database.example');
 
 const catalogTables = [
-  'companies',
-  'land_types',
-  'lands',
-  'lands_users',
-  'permissions',
-  'report_data',
-  'report_types',
-  'reports',
-  'role_permissions',
-  'roles',
-  'users'
+  'building',
+  'feature',
+  'space',
+  'space_feature',
+  'subject',
+  'subject_group',
+  'subject_group_session',
+  'subject_group_session_feature',
 ];
 
 let db;

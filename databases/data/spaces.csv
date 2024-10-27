@@ -1,0 +1,61 @@
+id,name,building_id,capacity,is_active
+Q1/0001,pas. aula inf.+ sala graus,Q,27,True
+Q1/0007,aula d'informàtica a (2 portes,Q,68,True
+Q1/0019,aula d'informàtica b,Q,68,True
+Q1/1003,aula q1/1003 (dues portes),Q,70,True
+Q1/1007,aula q1/1007 (dues portes),Q,68,True
+Q1/1011,aula q1/1011 (tres portes),Q,103,True
+Q2/0001,pas.lab.int. + sala d'estudis,Q,27,True
+Q2/0007,lab. integrat informàtica 1,Q,21,True
+Q2/0011,lab. integrat informàtica 2,Q,21,True
+Q2/0013,lab. integrat informàtica 3,Q,21,True
+Q2/0017,lab. integrat informàtica 4,Q,21,True
+Q2/0019,lab. integrat informàtica 5,Q,21,True
+Q2/1003,aula q2/1003,Q,53,True
+Q2/1005,aula q2/1005 (dues portes),Q,50,True
+Q2/1009,aula q2/1009 (dues portes),Q,68,True
+Q2/1013,aula q2/1013 (dues portes),Q,68,True
+Q3/0003,aula q3/0003 (dues portes),Q,70,True
+Q3/0009,aula q3/0009,Q,33,True
+Q3/0013,aula q3/0013,Q,33,True
+Q3/1011,aula q3/1011 (tres portes),Q,86,True
+Q4/0003,aula q4/0003 (dues portes),Q,70,True
+Q4/0007,aula q4/0007 (dues portes),Q,86,True
+Q4/0011,aula q4/0011 (tres portes),Q,86,True
+Q4/1003,aula q4/1003,Q,53,True
+Q4/1005,aula q4/1005,Q,51,True
+Q4/1009,aula q4/1009 (dues portes),Q,68,True
+Q4/1013,aula q4/1013 (dues portes),Q,69,True
+Q5/0003,lab. docent estruct. comput.,Q,21,True
+Q5/0004,laboratori docent acso,Q,21,True
+Q5/1005,laboratori docent ee,Q,21,True
+Q5/1006,laboratori de projectes ee,Q,21,True
+Q5/1009,laboratori docent elect.gral.,Q,21,True
+Q5/1010,laboratori docent automàtica,Q,21,True
+Q5/1011,laboratori docent dcc (q5/1012,Q,21,True
+Q5/2003,laboratori docent sist. dig.,Q,21,True
+Q5/2006,laboratori docent me,Q,21,True
+Q5/2007,laboratori cèl·lula flexible,Q,21,True
+Q5/2008,laboratori docent ccd,Q,21,True
+Q6/0006,lab.doc.(q6/0005-0007-0008),Q,21,True
+Q6/1006,lab doc eq b (q6/0007+q6/0008),Q,21,True
+Q6/1011,laboratori docent em 1,Q,21,True
+Q6/1012,laboratori docent em 2,Q,21,True
+Q6/1014,laboratori,Q,21,True
+Q6/2004,laboratori docent elect.p/tele,Q,21,True
+Q6/2005,laboratori docent comunicació,Q,21,True
+Q6/2007,laboratori docent telecomunic.,Q,21,True
+Q6/2008,laboratori,Q,20,True
+QC/0067,laboratori de recerca,Q,20,True
+QC/1031,laboratori de receca,Q,20,True
+QC/1033,lab. de recerca b,Q,20,True
+QC/1082,lab. recerca (qc/1086-qc/1090),Q,20,True
+QC/1084,lab.recerca ii(qc/1088-qc/1092,Q,20,True
+QC/2011,laboratori a. turing,Q,20,True
+QC/2015,laboratori kleinrock,Q,21,True
+QC/2082,laboratori 1,Q,20,True
+QC/2090,laboratori 2,Q,20,True
+QC/2099,laboratori docent,Q,21,True
+QC/2101,laboratoriisional i.c.n.,Q,21,True
+QC/3010,laboratori projectes,Q,20,True
+QC/3078,laboratori clúster,Q,20,True
