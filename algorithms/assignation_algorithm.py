@@ -3,15 +3,7 @@ import numpy as np
 import time
 from queue import PriorityQueue
 
-class Elemento:
-    def __init__(self, valor:pd.DataFrame):
-        self.valor = valor
-
-    # Método de comparación
-    def __lt__(self, other):
-        return self['start'] < other['start']
-
-class Algorithms_benckmarks:
+class Algorithms_benchmarks:
 
     consumos_por_dispositivo = {
         "Piano": 0,
@@ -77,6 +69,15 @@ class Algorithms_benckmarks:
     }
     horario = dict
 
+    class Elemento:
+        def __init__(self, valor: pd.DataFrame):
+            self.valor = valor
+
+        # Método de comparación
+        def __lt__(self, other):
+            return self['start'] < other['start']
+
+
     def __init__(self, info: pd.DataFrame):
         portatil_Wh = 100
 
@@ -103,10 +104,31 @@ class Algorithms_benckmarks:
         # Store the updated DataFrame
         self.info = info
 
-    def benckmark_without_movement(self):
-        for dia in self.info['dias'].unique():
-            disorder_info = self.info[self.info['dias'] == dia]
-            if (len(self.horario)==0):
-                self.horario[dia]=pd.DataFrame
+    def benchmark_without_movement(self):
+        for aula in self.info['space.id'].unique():
 
-            P
+            disorder_info = self.info[self.info['space.id'] == aula]
+            self.horario[aula]=dict
+
+            for dia in disorder_info['dias'].unique():
+
+                elements = []
+                total = 0
+                dia_info = disorder_info[disorder_info['dia'] == dia]
+                pq = PriorityQueue(self.Elemento(disorder_info.head(0)))
+                dia_info = dia_info.drop(index=0)
+
+                for space in dia_info:
+                   pq.put(self.Elemento(space))
+
+                while not pq.empty():
+                    hour = pq.get()
+                    elements.append(hour)
+                    total += hour['consumo']
+
+                self.horario[aula][dia] = elements
+                self.horario[aula][dia]['total'] = total
+
+
+
+
