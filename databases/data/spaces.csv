@@ -1,0 +1,626 @@
+id,name,building_id,capacity,is_active
+B0/-106,aula d'informàtica a,B,97,True
+B0/-124,aula informatica b,B,60,True
+B0/-126,aula informatica c,B,65,True
+B1/-1026,aula 1,B,32,True
+B1/-1028,aula 2,B,57,True
+B1/-1032,aula 2b,B,70,True
+B1/-1038,aula 3,B,78,True
+B1/-1042,aula 4,B,88,True
+B1/-1046,aula 5,B,154,True
+B1/-1050,aula 6,B,70,True
+B1/-1054,aula 7,B,83,True
+B1/-119,aula 1,B,65,True
+B1/-123,aula 2,B,62,True
+B1/-127,aula 3,B,62,True
+B1/-129,aula 4,B,63,True
+B1/-131,aula 5,B,54,True
+B1/-132,aula docent,B,32,True
+B1/-133,aula 6,B,82,True
+B1/001,aula de mestratge,B,49,True
+B1/0014,aula 8,B,45,True
+B1/0020,aula 9,B,85,True
+B1/0024,aula 10,B,48,True
+B1/0030,aula 11,B,59,True
+B1/0032,aula 12,B,54,True
+B1/0034,aula 13,B,82,True
+B1/0038,aula 14,B,87,True
+B1/0042,aula 15,B,202,True
+B1/023,aula 7,B,64,True
+B1/025,aula 8,B,82,True
+B1/027,aula 9,B,54,True
+B1/029,aula 10,B,71,True
+B1/031,aula 11,B,76,True
+B1/033,aula 12,B,96,True
+B1/0P2,d'aula 6 a aula 13,B,27,True
+B11/008,aula 502,B,73,True
+B11/016,aula 503,B,42,True
+B11/018,aula 504,B,43,True
+B11/020,aula 505,B,41,True
+B11/022,aula 506,B,40,True
+B11/024,aula 507,B,29,True
+B11/032,aula 501,B,118,True
+B11/182,aula 509,B,24,True
+B11/288,laboratori de ling.informàt.,B,20,True
+B2/-109,aula 1,B,33,True
+B2/-113,aula 2,B,66,True
+B2/-117,aula 3,B,67,True
+B2/-119,aula 4,B,33,True
+B2/-121,aula 5,B,60,True
+B2/-123,aula 6,B,58,True
+B2/-125,aula 7,B,50,True
+B2/-125A,aula 8,B,52,True
+B2/-128.2,sala control aula magna,B,38,True
+B2/-130,aula magna posterior parell,B,7,True
+B2/-141,aula magna,B,196,True
+B2/013,aula 9,B,76,True
+B2/013C,aula 9b,B,76,True
+B2/015,aula 10,B,146,True
+B2/017,aula 11,B,101,True
+B2/019,aula 12,B,94,True
+B2/023,aula 13,B,99,True
+B2/025,aula 14,B,51,True
+B2/0P1,d'aula 8 a aula 14,B,27,True
+B3/0017,aula 20,B,68,True
+B3/0019,aula 21,B,38,True
+B3/0021,aula 22,B,82,True
+B3/0025,aula 23,B,88,True
+B3/0031,aula 24,B,38,True
+B3/0035,aula 25,B,82,True
+B3/0037,aula 26,B,88,True
+B3/013,aula d'informàtica 23,B,60,True
+B3/013A,aula d'informàtica 22,B,60,True
+B3/017A,aula d'informàtica 21,B,57,True
+B3/112C,aules seminaris,B,41,True
+B3B/0002,aula 16,B,74,True
+B3B/0006,aula 17,B,76,True
+B3B/0010,aula 18,B,119,True
+B3B/0014,aula 19,B,72,True
+B5/-104,aula 16,B,36,True
+B5/-106,aula 18,B,51,True
+B5/-108,aula 17,B,46,True
+B5/-118,aula p15,B,176,True
+B5/012,lab. d'estad.aplic.i modelit.,B,20,True
+B5/055,laboratori de metodologia,B,20,True
+B5/116,laboratori,B,21,True
+B5/118,laboratori psicologia experim.,B,20,True
+B5/119,laboratori audiovisuals,B,20,True
+B5/120,laboratori biofeetback,B,20,True
+B5/122,laboratori psicooncologia,B,20,True
+B5/127,laboratori a psicol.bàsica,B,20,True
+B5/129,laboratori b - audiovisuals,B,20,True
+B5/130,laboratori biofeetback,B,20,True
+B5/132,laboratori conducta humana,B,20,True
+B5/134,laboratori conducta animal,B,20,True
+B5/1341,laboratori psicologia experim.,B,20,True
+B5/1342,laboratori psicologia experim.,B,20,True
+B5/136,lab. diferències indivi.,B,20,True
+B5/146,laboratori,B,20,True
+B5/1461,laboratori psicologia esport,B,20,True
+B5/148,lab. psicologia de l'esport,B,20,True
+B5/152,laboratori percepció,B,21,True
+B5/156,laboratori,B,20,True
+B5/158.22,laboratori,B,20,True
+B5/158.24,laboratori,B,20,True
+B5/158.28,laboratori,B,20,True
+B5/158.38,laboratori,B,20,True
+B5/158.6,laboratori,B,20,True
+B5B/-110,aula p-07,B,38,True
+B5B/-111,laboratori 36,B,21,True
+B5B/-112,aula p-08,B,61,True
+B5B/-113,laboratori 37,B,21,True
+B5B/-115,laboratori 38,B,21,True
+B5B/-116,aula p-09,B,64,True
+B5B/-120,aula p-10,B,64,True
+B5B/-121,suport logístic lab. docents,B,16,True
+B5B/-124,aula p-11,B,64,True
+B5B/-127,aula 35 informàtica,B,51,True
+B5B/-128,aula p-12,B,64,True
+B5B/-129,aula 34 informàtica,B,48,True
+B5B/-131,aula 33 informàtica,B,48,True
+B5B/-132,aula p-13,B,64,True
+B5B/-133,aula 32 informàtica,B,48,True
+B5B/-135,aula 31 informàtica,B,48,True
+B5B/-136,aula p-14,B,61,True
+B5B/004,aula p-01,B,76,True
+B5B/006,aula p-02,B,86,True
+B5B/010,aula p-03,B,86,True
+B5B/014,aula p-04,B,86,True
+B5B/018,aula p-05,B,86,True
+B5B/022,aula p-06,B,104,True
+B5B/055,laboratori,B,20,True
+B5C/001,aula p-23,B,50,True
+B5C/002,aula p-22,B,48,True
+B5C/003,aula p-21,B,41,True
+B5C/011,aula p-24,B,90,True
+B5L/005,laboratori,B,20,True
+B5L/011,laboratòri de farmacologia,B,20,True
+B5L/025,laboratori,B,20,True
+B5L/027,laboratori,B,20,True
+B5L/033,laboratori,B,20,True
+B5L/037,laboratori,B,20,True
+B7/014,aula 202,B,47,True
+B7/014B,aula 201,B,47,True
+B7/016,aula 203,B,47,True
+B7/018,aula 204,B,27,True
+B7/020,aula 205,B,23,True
+B7/022,aula 206,B,26,True
+B7/024,aula 207,B,23,True
+B7/026,aula 208,B,23,True
+B7/028,aula 209,B,26,True
+B7/030,aula 210,B,34,True
+B7/032,aula 211,B,46,True
+B7/034,aula 212,B,46,True
+B7/036,aula 213,B,34,True
+B7/038,aula 214,B,36,True
+B7/040,aula 215,B,32,True
+B7/042,aula 216,B,30,True
+B7/1138,laboratori arqueologia,B,20,True
+B7/155,laboratori lemla,B,20,True
+B7/179,aula 218,B,30,True
+B7B/003,aula 601,B,80,True
+B7B/008,aula 101,B,106,True
+B7B/009,aula 602,B,84,True
+B7B/012,aula 102,B,62,True
+B7B/013,aula 603,B,84,True
+B7B/016,aula 103,B,62,True
+B7B/017,aula 604,B,84,True
+B7B/020,aula 104,B,62,True
+B7B/021,aula 605,B,61,True
+B7B/024,aula 105,B,63,True
+B7B/028,aula 106,B,62,True
+B7B/032,aula 107,B,57,True
+B7B/101,laboratori de recerca,B,20,True
+B7B/102,aula 108,B,84,True
+B7B/103,aula 606,B,82,True
+B7B/106,aula 109,B,62,True
+B7B/107,aula 607,B,35,True
+B7B/110,aula 110,B,63,True
+B7B/114,aula 111,B,62,True
+B7B/118,aula 112,B,62,True
+B7B/122,aula 113,B,62,True
+B7B/126,aula 114,B,62,True
+B7B/130,aula 115,B,58,True
+B9/0014,laboratori docent-aula 401-,B,21,True
+B9/0016,aula docent 402,B,43,True
+B9/0062,aula,B,46,True
+B9/012,aula 401,B,51,True
+B9/014,laboratori / aula 401,B,71,True
+B9/1104,laboratori de recerca,B,20,True
+B9/1104.1,laboratori de recerca,B,20,True
+B9/127,aula-seminari facultat,B,16,True
+B9/241,aula seminari facultat,B,17,True
+B9B/004,aula 300,B,49,True
+B9B/014,aula 301,B,51,True
+B9B/018,aula 302,B,49,True
+B9B/022,aula 303,B,48,True
+B9B/026,aula 304,B,49,True
+B9B/030,aula 305,B,60,True
+B9B/034,aula 306,B,53,True
+C/337,laboratori docent microbiologi,C,21,True
+C/351,laboratori,C,21,True
+C1/-124,aula,C,29,True
+C1/-128,aula,C,38,True
+C1/-338,laboratori,C,20,True
+C1/-342,laboratori,C,20,True
+C1/009,aula,C,58,True
+C1/013,aula,C,82,True
+C1/017,aula,C,121,True
+C1/119-1,laboratori de receca,C,20,True
+C1/136,laboratori de docència,C,21,True
+C1/139-1,laboratori de receca,C,20,True
+C1/221,laboratori pol·len,C,20,True
+C1/223,laboratori,C,20,True
+C1/227,laboratori cartografia,C,20,True
+C1/245,laboratoris docents,C,21,True
+C1/247,laboratori de docència,C,21,True
+C1/309,laboratori de receca,C,20,True
+C1/311,laboratori de receca,C,20,True
+C1/329,laboratori micologia,C,20,True
+C1/335,laboratori micologia b.,C,20,True
+C1/341,laboratori de receca,C,20,True
+C1/345,laboratori de docència,C,21,True
+C2/-112,laboratori de receca,C,20,True
+C2/-114,laboratori de receca,C,20,True
+C2/-116,laboratori de recerca,C,20,True
+C2/-118,laboratori de recerca,C,20,True
+C2/-120,laboratori de recerca,C,20,True
+C2/-137,laboratori integrat núm. 2,C,21,True
+C2/-139,laboratori integrat núm. 3,C,21,True
+C2/-147,laboratori integrat núm. 4,C,21,True
+C2/-151,laboratori de docència,C,21,True
+C2/-160,aula especial,C,60,True
+C2/-160BIS,laboratori docent,C,21,True
+C2/-167,laboratori tem,C,20,True
+C2/-169,laboratori sem,C,20,True
+C2/-171,laboratori euap,C,20,True
+C2/-173,laboratori ultramicrotomia,C,20,True
+C2/-173-1,laboratori,C,20,True
+C2/014,laboratori microscòpia,C,20,True
+C2/053,laboratori - sala matances,C,20,True
+C2/055,laboratori de receca,C,20,True
+C2/057,laboratori de recerca (ria),C,20,True
+C2/057-1,laboratori de recerca,C,20,True
+C2/057-2,laboratori,C,20,True
+C2/059,laboratori de recerca (mt),C,20,True
+C2/059-1,laboratori de receca,C,20,True
+C2/063,laboratori de recerca,C,20,True
+C2/065,laboratori de receca,C,20,True
+C2/065-1,laboratori de recerca,C,20,True
+C2/065-2,laboratori de receca,C,20,True
+C2/069,laboratori,C,20,True
+C2/070,laboratori petrologia,C,20,True
+C2/072,lab. mat. arqueològics,C,20,True
+C2/072-1,laboratori de receca,C,20,True
+C2/074,laboratori de petrologia,C,20,True
+C2/074-1,laboratori de receca,C,20,True
+C2/076,laboratori de recerca,C,20,True
+C2/078,laboratori de recerca geotec.,C,20,True
+C2/080,laboratori de recerca,C,20,True
+C2/080-1,laboratori rx,C,20,True
+C2/082-1,laboratori de receca,C,20,True
+C2/086,laboratori de recerca,C,20,True
+C2/090,laboratori de docència,C,21,True
+C2/125,laboratori de receca,C,10,True
+C2/139,laboratori de receca,C,20,True
+C2/147,laboratori de receca,C,20,True
+C2/153,laboratori de docència,C,21,True
+C2/182,laboratori microscopia,C,20,True
+C2/204,lab. docent estratigrafia,C,21,True
+C2/211,laboratori de recerca 5,C,20,True
+C2/218,laboratori de receca,C,20,True
+C2/220,laboratori de recerca,C,20,True
+C2/221,laboratori de recerca,C,20,True
+C2/225,laboratori de receca,C,20,True
+C2/228,laboratori,C,20,True
+C2/237,laboratori de recerca 7,C,20,True
+C2/239,laboratori rnasa,C,20,True
+C2/241,laboratori de receca,C,20,True
+C2/243,laboratori de receca,C,20,True
+C2/318,laboratori paleo,C,20,True
+C2/328,laboratori de docència (paleo),C,21,True
+C2/329,laboratori de receca,C,20,True
+C2/331,laboratori de receca,C,20,True
+C2/332,laboratori de receca,C,20,True
+C2/333,laboratori de receca,C,20,True
+C2/335,laboratori d'adh,C,20,True
+C2/336,laboratori de receca,C,20,True
+C2/338,laboratori de receca,C,20,True
+C2/349,laboratori de receca,C,20,True
+C2/351,laboratori de receca,C,20,True
+C2/404,laboratori de receca,C,20,True
+C2/411,laboratori de recerca,C,20,True
+C2/413,laboratori de docència,C,21,True
+C2/420,laboratori de receca,C,20,True
+C2/423-1,laboratori de receca,C,20,True
+C2/424,laboratori de receca,C,20,True
+C2/425,laboratori anàlisi bioquímic,C,16,True
+C2/426,laboratori de receca,C,10,True
+C2/430,laboratori de receca,C,20,True
+C2/435,laboratori de docència,C,21,True
+C2/437,laboratori de docència,C,21,True
+C2/438,laboratori de receca,C,20,True
+C2/439,laboratori de receca,C,20,True
+C2/442,laboratori de receca,C,20,True
+C3/-114,laboratori de docència,C,21,True
+C3/-116,laboratori de docència,C,21,True
+C3/-118,laboratori de docència,C,21,True
+C3/-126,laboratori de docència,C,21,True
+C3/-128,laboratori de docència,C,21,True
+C3/016,aula,C,94,True
+C3/018,aula,C,100,True
+C3/020,aula,C,92,True
+C3/022,aula,C,121,True
+C3/026,espai cedic lab. sincrotró,C,12,True
+C3/028,aula,C,76,True
+C3/032,aula,C,90,True
+C3/036,aula,C,66,True
+C3/047,laboratori,C,20,True
+C3/113,laboratori de recerca,C,20,True
+C3/113-2,laboratori de recerca,C,20,True
+C3/115,laboratori de recerca,C,20,True
+C3/115-1,laboratori,C,20,True
+C3/117,laboratori de docència,C,21,True
+C3/119,laboratori de recerca,C,20,True
+C3/123,laboratori de recerca,C,20,True
+C3/209-1,laboratori,C,20,True
+C3/220,laboratori de docència,C,21,True
+C3/221,laboratori recerca,C,20,True
+C3/223,laboratori de recerca,C,20,True
+C3/231-1,laboratori,C,20,True
+C3/235,laboratori de recerca,C,20,True
+C3/241-1,laboratori de recerca,C,20,True
+C3/304,labavo minusvalisd,C,23,True
+C3/313,laboratori de receca,C,20,True
+C3/314,laboratori docent,C,21,True
+C3/315,laboratori de recerca p3,C,20,True
+C3/316,laboratori docent,C,21,True
+C3/317,laboratori de recerca p3,C,20,True
+C3/320,laboratori docent,C,21,True
+C3/322,laboratori de docència,C,21,True
+C3/324,laboratori docent,C,21,True
+C3/327,laboratori de recerca,C,20,True
+C3/341,laboratori de docència,C,21,True
+C3/341-1,laboratori de docència,C,21,True
+C3/343,laboratori de pràctiques,C,21,True
+C3/354,laboratori docent,C,21,True
+C3/354.2,laboratori docent,C,21,True
+C3/422,laboratori docent,C,21,True
+C3/424,laboratori docent,C,21,True
+C3/432,laboratori de receca,C,20,True
+C3/434,laboratori de receca,C,20,True
+C3/436,laboratori de receca,C,20,True
+C3/438,laboratori de receca,C,20,True
+C3/438-1,laboratori de receca,C,20,True
+C3/440,laboratori de docència,C,21,True
+C3B/-102,aula crm,C,43,True
+C3B/-104,aula crm,C,33,True
+C3B/-106,aula  crm,C,33,True
+C3B/002,aula,C,50,True
+C3B/004,aula,C,92,True
+C3B/006,aula,C,70,True
+C3B/008,aula,C,43,True
+C3B/010,aula docent,C,94,True
+C3B/012,aula,C,48,True
+C3B/013,aula docent,C,60,True
+C3B/030,aula crm,C,24,True
+C5/-106,aula de biotecnologia,C,71,True
+C5/-110,laboratori,C,21,True
+C5/-112,laboratori,C,21,True
+C5/-114,laboratori de docència,C,21,True
+C5/-118,laboratori de docència,C,21,True
+C5/-126,laboratori,C,21,True
+C5/012,aula,C,50,True
+C5/016,aula,C,45,True
+C5/017,aula,C,52,True
+C5/018,aula,C,51,True
+C5/020,aula,C,34,True
+C5/028,aula,C,31,True
+C5/030,aula,C,34,True
+C5/032,aula,C,28,True
+C5/034,aula,C,66,True
+C5/050,laboratori magnetisme,C,20,True
+C5/052,aula d'informàtica,C,28,True
+C5/062,aula d'informàtica,C,30,True
+C5/065,aula d'informàtica,C,68,True
+C5/067,aula d'informàtica,C,23,True
+C5/073,aula d'informàtica,C,56,True
+C5/077,aula d'informàtica,C,36,True
+C5/119,laboratori 1,C,20,True
+C5/121,laboratori 2,C,20,True
+C5/122,laboratori de recerca,C,20,True
+C5/124,laboratori de recerca,C,20,True
+C5/125,aula,C,52,True
+C5/127,aula,C,65,True
+C5/129,laboratori 5,C,20,True
+C5/131,aula,C,78,True
+C5/135,aula,C,75,True
+C5/163,laboratoris docents,C,21,True
+C5/209,laboratoris integrats biologia,C,21,True
+C5/215,laboratori de docència,C,21,True
+C5/219,aula de docència,C,71,True
+C5/223,aula,C,71,True
+C5/225,laboratori de docència,C,21,True
+C5/227,aula de docència,C,71,True
+C5/229,laboratori de docència,C,21,True
+C5/231,aula,C,81,True
+C5/258,laboratori (ieec),C,12,True
+C5/304,laboratori de docència,C,21,True
+C5/306,laboratori de recerca,C,20,True
+C5/306-2,laboratori de recerca,C,20,True
+C5/313,laboratori de docència,C,21,True
+C5/317,laboratori,C,21,True
+C5/321,laboratori,C,21,True
+C5/325,laboratori docentr,C,21,True
+C5/329,laboratori,C,21,True
+C5/331,laboratori de recerca,C,20,True
+C5/333,laboratori docent,C,21,True
+C5/337,laboratori de docència,C,21,True
+C5/339.1,laboratori,C,10,True
+C5/341.1,laboratori recerca,C,20,True
+C5/347,laboratori antropologia,C,21,True
+C5/351,laboratori,C,21,True
+C5/411,laboratori de docència,C,21,True
+C5/413,laboratori,C,21,True
+C5/414,laboratori làser,C,20,True
+C5/415,laboratori,C,21,True
+C5/437,laboratori de docència,C,21,True
+C5/439,laboratori,C,21,True
+C5/454,aula collserola,C,30,True
+C5B/-106B,laboratori,C,20,True
+C5B/-106C,laboratori,C,20,True
+C5B/-162,laboratori de docència,C,21,True
+C5B/-166,laboratori de docència,C,21,True
+C5B/-168,laboratori de docència,C,21,True
+C5B/025,aula,C,38,True
+C5B/027,aula,C,37,True
+C5B/029,aula,C,37,True
+C5B/031,aula,C,37,True
+C5B/034,lab. recerca creaf ecologia,C,20,True
+C5B/040,laboratori sòls creaf ecologia,C,20,True
+C5B/042,laboratori d'aigües,C,20,True
+C5B/050-1,laboratori,C,20,True
+C5B/050-2,laboratori,C,20,True
+C5B/052,laboratori,C,20,True
+C5B/054,laboratori,C,20,True
+C5B/056,laboratori,C,20,True
+C7/-106,laboratori de recerca,C,20,True
+C7/-108,laboratori de recerca,C,20,True
+C7/-108-1,laboratori de receca,C,20,True
+C7/-114,laboratori,C,20,True
+C7/-114A,laboratori,C,20,True
+C7/-114B,laboratori,C,20,True
+C7/-114C,laboratori,C,20,True
+C7/-116,laboratori de receca,C,20,True
+C7/-130,laboratori,C,20,True
+C7/013-1,laboratori icp,C,20,True
+C7/013-2,labortori,C,20,True
+C7/017-2B,laboratori,C,20,True
+C7/017-3,laboratori,C,20,True
+C7/019,laboratori,C,20,True
+C7/019A,laboratori,C,20,True
+C7/019B,laboratori,C,20,True
+C7/036,laboratori tractament d'aigua,C,20,True
+C7/038,laboratori de recerca,C,20,True
+C7/042,laboratori melissa,C,20,True
+C7/046,laboratori,C,20,True
+C7/048,laboratori serveis,C,20,True
+C7/050,laboratori de recerca,C,20,True
+C7/052,laboratori de recerca,C,20,True
+C7/054,laboratori d'anàlisis,C,20,True
+C7/104,laboratori de docència,C,21,True
+C7/113,laboratori,C,20,True
+C7/117,laboratori,C,20,True
+C7/118,laboratori,C,20,True
+C7/120,laboratori de receca,C,20,True
+C7/121,laboratori,C,20,True
+C7/126,laboratori de docència,C,21,True
+C7/204,laboratori de docència,C,20,True
+C7/209,laboratori de receca,C,20,True
+C7/211,laboratori de receca,C,20,True
+C7/213,laboratori de receca,C,20,True
+C7/215,laboratori de receca,C,20,True
+C7/218,laboratori de receca,C,20,True
+C7/219,laboratori,C,20,True
+C7/220,laboratori de receca,C,20,True
+C7/222,laboratori de receca,C,20,True
+C7/223,laboratori,C,20,True
+C7/227,laboratori,C,20,True
+C7/228,laboratori de docència,C,21,True
+C7/255,laboratori,C,20,True
+C7/257,laboratori de receca,C,20,True
+C7/261,laboratori,C,20,True
+C7/304,laboratori de docència,C,21,True
+C7/306,laboratori de receca,C,20,True
+C7/309,laboratori de receca,C,20,True
+C7/311,laboratori de receca,C,20,True
+C7/315,laboratori,C,20,True
+C7/316,laboratori de receca,C,20,True
+C7/318,laboratori de receca,C,20,True
+C7/319,laboratori,C,20,True
+C7/323,laboratori,C,20,True
+C7/326,laboratori de docència,C,21,True
+C7/328,laboratori,C,20,True
+C7/351,laboratori,C,20,True
+C7/353,laboratori,C,20,True
+C7/357,laboratori,C,20,True
+C7/406,laboratori de docència,C,21,True
+C7/407,laboratori de receca,C,20,True
+C7/408,laboratori de receca,C,20,True
+C7/411,laboratori de receca,C,20,True
+C7/415,laboratori,C,20,True
+C7/419,laboratori,C,20,True
+C7/423,laboratori,C,20,True
+C7/434,laboratori de docència,C,21,True
+C7/451,laboratori,C,20,True
+C7/453,laboratori,C,20,True
+C7/457,laboratori de receca,C,20,True
+C7/507,lab. especial alt risc,C,20,True
+C7/511,lab. especial alt risc,C,20,True
+C7B/-132,laboratori,C,20,True
+C7B/-146,laboratori,C,20,True
+Q1/0001,pas. aula inf.+ sala graus,Q,27,True
+Q1/0007,aula d'informàtica a (2 portes,Q,68,True
+Q1/0019,aula d'informàtica b,Q,68,True
+Q1/1003,aula q1/1003 (dues portes),Q,70,True
+Q1/1007,aula q1/1007 (dues portes),Q,68,True
+Q1/1011,aula q1/1011 (tres portes),Q,103,True
+Q2/0001,pas.lab.int. + sala d'estudis,Q,27,True
+Q2/0007,lab. integrat informàtica 1,Q,21,True
+Q2/0011,lab. integrat informàtica 2,Q,21,True
+Q2/0013,lab. integrat informàtica 3,Q,21,True
+Q2/0017,lab. integrat informàtica 4,Q,21,True
+Q2/0019,lab. integrat informàtica 5,Q,21,True
+Q2/1003,aula q2/1003,Q,53,True
+Q2/1005,aula q2/1005 (dues portes),Q,50,True
+Q2/1009,aula q2/1009 (dues portes),Q,68,True
+Q2/1013,aula q2/1013 (dues portes),Q,68,True
+Q3/0003,aula q3/0003 (dues portes),Q,70,True
+Q3/0009,aula q3/0009,Q,33,True
+Q3/0013,aula q3/0013,Q,33,True
+Q3/1011,aula q3/1011 (tres portes),Q,86,True
+Q4/0003,aula q4/0003 (dues portes),Q,70,True
+Q4/0007,aula q4/0007 (dues portes),Q,86,True
+Q4/0011,aula q4/0011 (tres portes),Q,86,True
+Q4/1003,aula q4/1003,Q,53,True
+Q4/1005,aula q4/1005,Q,51,True
+Q4/1009,aula q4/1009 (dues portes),Q,68,True
+Q4/1013,aula q4/1013 (dues portes),Q,69,True
+Q5/0003,lab. docent estruct. comput.,Q,21,True
+Q5/0004,laboratori docent acso,Q,21,True
+Q5/1005,laboratori docent ee,Q,21,True
+Q5/1006,laboratori de projectes ee,Q,21,True
+Q5/1009,laboratori docent elect.gral.,Q,21,True
+Q5/1010,laboratori docent automàtica,Q,21,True
+Q5/1011,laboratori docent dcc (q5/1012,Q,21,True
+Q5/2003,laboratori docent sist. dig.,Q,21,True
+Q5/2006,laboratori docent me,Q,21,True
+Q5/2007,laboratori cèl·lula flexible,Q,21,True
+Q5/2008,laboratori docent ccd,Q,21,True
+Q5/2009,laboratori docent ccd,Q,21,True
+Q6/0006,lab.doc.(q6/0005-0007-0008),Q,21,True
+Q6/1006,lab doc eq b (q6/0007+q6/0008),Q,21,True
+Q6/1011,laboratori docent em 1,Q,21,True
+Q6/1012,laboratori docent em 2,Q,21,True
+Q6/1014,laboratori,Q,21,True
+Q6/2004,laboratori docent elect.p/tele,Q,21,True
+Q6/2005,laboratori docent comunicació,Q,21,True
+Q6/2007,laboratori docent telecomunic.,Q,21,True
+Q6/2008,laboratori,Q,20,True
+Q6/2009,laboratori,Q,21,True
+QC/0067,laboratori de recerca,Q,20,True
+QC/0069,laboratori de recerca,Q,20,True
+QC/0073,laboratori de recerca,Q,20,True
+QC/0075,laboratori de recerca,Q,20,True
+QC/0077,laboratori de recerca,Q,20,True
+QC/0079,laboratori de recerca,Q,20,True
+QC/0081,laboratori de recerca,Q,20,True
+QC/0083,laboratori de recerca,Q,20,True
+QC/0085,laboratori de recerca,Q,20,True
+QC/0087,laboratori de recerca,Q,20,True
+QC/0087.1,laboratori de recerca,Q,20,True
+QC/0087.5,laboratori de recerca,Q,20,True
+QC/0089,laboratori de recerca,Q,20,True
+QC/0107,laboratori de recerca,Q,20,True
+QC/0109,laboratori de recerca,Q,20,True
+QC/0111,laboratori de recerca,Q,20,True
+QC/0113,laboratori de recerca,Q,20,True
+QC/1031,laboratori de receca,Q,20,True
+QC/1033,lab. de recerca b,Q,20,True
+QC/1082,lab. recerca (qc/1086-qc/1090),Q,20,True
+QC/1084,lab.recerca ii(qc/1088-qc/1092,Q,20,True
+QC/2011,laboratori a. turing,Q,20,True
+QC/2015,laboratori kleinrock,Q,21,True
+QC/2043,laboratori,Q,20,True
+QC/2045,laboratori,Q,20,True
+QC/2053,laboratori,Q,20,True
+QC/2057,laboratori,Q,20,True
+QC/2059,laboratori,Q,20,True
+QC/2061,laboratori,Q,20,True
+QC/2082,laboratori 1,Q,20,True
+QC/2090,laboratori 2,Q,20,True
+QC/2099,laboratori docent,Q,21,True
+QC/2101,laboratoriisional i.c.n.,Q,21,True
+QC/2149,laboratori docent,Q,21,True
+QC/2155,laboratori docent,Q,21,True
+QC/2161,laboratori docent,Q,21,True
+QC/2163,laboratori docent,Q,21,True
+QC/2165,laboratori,Q,21,True
+QC/3010,laboratori projectes,Q,20,True
+QC/3047,laboratori,Q,20,True
+QC/3078,laboratori clúster,Q,20,True
+QC/3088,laboratori,Q,21,True
+QP/0003,laboratori de recerca,Q,20,True
+QP/0003.1,laboratori,Q,20,True
+QP/0005,laboratori de recerca,Q,20,True
+QP/0005.1,laboratori de recerca,Q,20,True
+QP/0005.2,laboratori de recerca,Q,20,True
+QP/0006,laboratori de recerca,Q,20,True
+QP/0008,laboratori de recerca,Q,20,True
+QP/0008.2,laboratori de recerca,Q,20,True
+QP/0008.3,laboratori de recerca,Q,20,True
+QP/0008.4,laboratori de recerca,Q,20,True
+QP/0009.2,laboratori de recerca,Q,20,True
+QP/0009.3,laboratori de recerca,Q,20,True
+QP/0009.5,laboratori de recerca,Q,20,True
+QP/0009.6,laboratori de recerca,Q,20,True
