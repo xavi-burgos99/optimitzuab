@@ -1,9 +1,12 @@
 -- Drop all tables on sqlite database (reverse order)
 DROP TABLE IF EXISTS "required_group_session_space";
+DROP TABLE IF EXISTS "subject_group_session_feature";
 DROP TABLE IF EXISTS "subject_group_session";
 DROP TABLE IF EXISTS "subject_group";
 DROP TABLE IF EXISTS "subject";
 DROP TABLE IF EXISTS "teacher";
+DROP TABLE IF EXISTS "space_feature";
+DROP TABLE IF EXISTS "feature";
 DROP TABLE IF EXISTS "space";
 DROP TABLE IF EXISTS "building";
 
@@ -32,13 +35,25 @@ CREATE TABLE "space" (
     FOREIGN KEY ("building_id") REFERENCES "building" ("id") ON DELETE CASCADE
 );
 
--- Create table `teacher`
-CREATE TABLE "teacher" (
-    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-    "name" TEXT DEFAULT "Unnamed teacher",
+-- Create table `feature`
+CREATE TABLE "feature" (
+    "id" INTEGER NOT NULL PRIMARY KEY,
+    "name" TEXT NOT NULL,
     "created_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updated_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "deleted_at" DATETIME DEFAULT NULL
+);
+
+-- Create table `space_feature`
+CREATE TABLE "space_feature" (
+    "id" INTEGER NOT NULL PRIMARY KEY,
+    "space_id" INTEGER NOT NULL,
+    "feature_id" INTEGER NOT NULL,
+    "created_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "deleted_at" DATETIME DEFAULT NULL,
+    FOREIGN KEY ("space_id") REFERENCES "space" ("id") ON DELETE CASCADE,
+    FOREIGN KEY ("feature_id") REFERENCES "feature" ("id") ON DELETE CASCADE
 );
 
 -- Create table `subject`
@@ -59,11 +74,8 @@ CREATE TABLE "subject_group" (
     "id" INTEGER NOT NULL PRIMARY KEY,
     "subject_id" INTEGER NOT NULL,
     "year" INTEGER NOT NULL,
-    "planned_capacity" INTEGER NOT NULL,
-    "real_capacity" INTEGER,
-    "hours" FLOAT NOT NULL,
+    "duration" FLOAT NOT NULL,
     "notes" TEXT,
-    "is_morning" BOOLEAN DEFAULT NULL,
     "created_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updated_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "deleted_at" DATETIME DEFAULT NULL,
@@ -74,17 +86,31 @@ CREATE TABLE "subject_group" (
 CREATE TABLE "subject_group_session" (
     "id" INTEGER NOT NULL PRIMARY KEY,
     "subject_group_id" INTEGER NOT NULL,
-    "building_id" INTEGER DEFAULT NULL,
     "space_id" INTEGER,
-    "teacher_id" INTEGER,
     "day" INTEGER NOT NULL,
-    "hour" INTEGER NOT NULL,
+    "start" TIME NOT NULL,
+    "end" TIME NOT NULL,
+    "duration" FLOAT NOT NULL,
+    "planned_capacity" INTEGER NOT NULL,
+    "real_capacity" INTEGER NOT NULL,
+    "is_morning" BOOLEAN DEFAULT NULL,
     "created_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updated_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "deleted_at" DATETIME DEFAULT NULL,
     FOREIGN KEY ("subject_group_id") REFERENCES "subject_group" ("id") ON DELETE CASCADE,
-    FOREIGN KEY ("building_id") REFERENCES "building" ("id") ON DELETE CASCADE,
     FOREIGN KEY ("space_id") REFERENCES "space" ("id") ON DELETE CASCADE
+);
+
+-- Create table `subject_group_session_feature`
+CREATE TABLE "subject_group_session_feature" (
+    "id" INTEGER NOT NULL PRIMARY KEY,
+    "subject_group_session_id" INTEGER NOT NULL,
+    "feature_id" INTEGER NOT NULL,
+    "created_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "deleted_at" DATETIME DEFAULT NULL,
+    FOREIGN KEY ("subject_group_session_id") REFERENCES "subject_group_session" ("id") ON DELETE CASCADE,
+    FOREIGN KEY ("feature_id") REFERENCES "feature" ("id") ON DELETE CASCADE
 );
 
 -- Create table `required_group_session_space`
